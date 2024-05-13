@@ -1,0 +1,92 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("assets/wallpaperflare.com_wallpaper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #game-container {
+    max-width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  h1 {
+    margin-top: 0;
+    color: #2c3e50;
+    text-align: center;
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .cell {
+    width: 100px;
+    height: 100px;
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    position: relative;
+  }
+  
+  .cell:hover {
+    background-color: #bdc3c7;
+  }
+  
+  .cell.X::before {
+    content: "X";
+    color: #333;
+  }
+  
+  .cell.O::before {
+    content: "O";
+    color: #e74c3c;
+  }
+  
+  #game-info {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #current-player {
+    font-weight: 500;
+    color: #2c3e50;
+  }
+  
+  #reset-button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #2c3e50;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #reset-button:hover {
+    background-color: #1a252f;
+  }
